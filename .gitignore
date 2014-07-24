@@ -1,0 +1,7 @@
+.idea
+vendor
+config.php
+agiletoolkit-sandbox.phar
+run.bat
+run.sh
+VERSION

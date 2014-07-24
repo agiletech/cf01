@@ -1,0 +1,5 @@
+<?php
+$config['project_instalation_config'] = 'TDNkM2R5OWhaMmxzWlhSdmIyeHJhWFF0WW5WdVpHeGxMbUZuYVd4bE5UVXVZMjl0LWM1ZmJjNzQzODNjYWM5OTQ4ZjRlNTNlNGYwM2Q4ODM0'; 
+$config['certificate'] = '0tXXUuJFOOtJqjAS4NI16ir/h/R2vhfNlZSxUB/xVrMt/54FFIrrChroVG5LRgvpDxymtYhISGKflag0k/aGO3avCDuBGCpb7NARNLARxp3uxJ/MbmyJe3x32FM6PtCaUJqVdBCaHhvbzxBMNqxwMx7/v+D/edFmBUlWe+PKsAham1ReescIXMtvL1B9IKIhJ29czAZMSTuR4ao/byVY3FfDs6L49/ptrJ3MwrcdIhAzLL2TccLr6nJaipsis76pgONO3D93AJl/kJoFH89Q6ELDNfXsm1igmnDL/RntQ/RN4uRZ5/douJQMml/E5bdORvV+1JkFrz+OmLQgkWo3Ow==:eyJjZXJ0X2V4cGlyZXNfZHRzIjoxNDA2MjQxODg3LCJjZXJ0X2lzc3VlZF9kdHMiOjE0MDYyMjc0ODcsInBsYW4iOm51bGwsInVpaWQiOiI2NjExMjE2YWQzOTRhZTQ5MmNkYTcwNDgxY2NkZmE3YzY3ZTJjNGNhIiwidmVyc2lvbiI6IjIifQ=='; 
+$config['installation_hash'] = '6611216ad394ae492cda70481ccdfa7c67e2c4ca'; 
+$config['name'] = 'counsellingfoundation'; 

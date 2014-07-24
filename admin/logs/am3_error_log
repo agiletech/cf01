@@ -1,0 +1,749 @@
+
+
+============================================================
+ on line , path: 
+
+Exception_Logic: Method is not defined for this object
+
+------------------------------------------------------------
+Date: 24-Jul-2014 17:03:17
+Query String: page=donor
+Referer: http://localhost/cf/admin/public/
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:883 SQL_Model->exception("Method is not defined for this object", "Logic")
+/home/konstantin/www/cf/admin/lib/Admin.php:21 AbstractObject->__call("notDeleted", Array(0))
+/home/konstantin/www/cf/admin/lib/Admin.php:21 Model_User->notDeleted()
+/home/konstantin/www/cf/admin/lib/Admin.php:9 Admin->addAuth()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/CLI.php:212 Admin->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:44 App_CLI->__construct("admin")
+/home/konstantin/www/cf/admin/public/index.php:13 App_Web->__construct("admin")
+
+Additional information:
+ * Raised by object: Object Model_User(admin_model_user)
+ * class: Model_User
+ * method: notDeleted
+ * arguments: 
+[24-Jul-2014 17:38:24 UTC] PHP Fatal error:  Unsupported operand types in /home/konstantin/www/cf/vendor/atk4/atk4/lib/Form/Field/ValueList.php on line 131
+
+
+============================================================
+AbstractObject.php on line 883, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_Logic: Method is not defined for this object
+
+------------------------------------------------------------
+Date: 24-Jul-2014 17:39:08
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=add&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:12 Field->setDefault("Trust")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Model_Donor->init()
+/home/konstantin/www/cf/admin/page/donor.php:14 AbstractObject->add("Model_Donor")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * class: Field
+ * method: setDefault
+ * arguments:   * 0: Trust
+
+
+
+============================================================
+AbstractObject.php on line 883, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_Logic: Method is not defined for this object
+
+------------------------------------------------------------
+Date: 24-Jul-2014 17:39:17
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=add&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:12 Field->setDefaultValue("Trust")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Model_Donor->init()
+/home/konstantin/www/cf/admin/page/donor.php:14 AbstractObject->add("Model_Donor")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * class: Field
+ * method: setDefaultValue
+ * arguments:   * 0: Trust
+
+
+
+============================================================
+PathFinder.php on line 484, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: Class is not defined in file
+
+------------------------------------------------------------
+Date: 24-Jul-2014 17:48:37
+Query String: page=donation
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+: PathFinder->{closure}("Model_Donation")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("Model_Donation")
+/home/konstantin/www/cf/admin/page/donation.php:14 AbstractObject->add("Model_Donation")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donation->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donation", "donation", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * file: /home/konstantin/www/cf/shared/lib/Model/Donation.php
+ * namespace: 
+ * class: Model_Donation
+
+
+============================================================
+dsql.php on line 1549, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib/DB
+
+Exception_DB: Database Query Failed
+
+------------------------------------------------------------
+Date: 24-Jul-2014 17:50:11
+Query String: page=donation&admin_layout_fluid_donation_crud_virtualpage=add&submit=admin_admin_layout_fluid_donation_crud_virtualpage_form
+Referer: http://localhost/cf/admin/public/?page=donation
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/SQL/Model.php:725 DB_dsql->insert()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/SQL/Model.php:700 SQL_Model->insert()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Controller/MVCForm.php:173 SQL_Model->save()
+: Controller_MVCForm->update(Object(Form))
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:823 call_user_func_array(Array(2), Array(1))
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Form/Basic.php:379 AbstractObject->hook("update")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Form/Basic.php:374 Form_Basic->save()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:606 Form_Basic->update()
+: View_CRUD->formSubmit(Object(Form), Object(Form))
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:823 call_user_func_array(Array(2), Array(2))
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Form/Basic.php:419 AbstractObject->hook("submit", Array(1))
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Form/Basic.php:477 Form_Basic->submitted()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Form/Basic.php:483 Form_Basic->isSubmitted()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:530 Form_Basic->onSubmit(Array(2))
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:257 View_CRUD->configureAdd(Null)
+/home/konstantin/www/cf/admin/page/donation.php:16 View_CRUD->setModel(Object(Model_Donation))
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donation->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donation", "donation", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * pdo_error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'
+ * mode: insert
+ * params:   * :a: 1
+  * :a_2: 56u
+  * :a_3: dtgh
+
+ * query: insert  into `donation` (`name`,`date`,`amount`) values (:a,:a_2,:a_3)
+ * template: insert [options_insert] into [table_noalias] ([set_fields]) values ([set_values])
+
+
+============================================================
+Basic.php on line 139, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib/Grid
+
+BaseException: No such formatter
+
+------------------------------------------------------------
+Date: 24-Jul-2014 17:50:31
+Query String: page=donation&cut_object=admin_layout_fluid_donation_crud_grid&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donation
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Controller/MVCGrid.php:70 Controller_MVCGrid->importField("date")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Controller/MVCGrid.php:57 Controller_MVCGrid->importFields(Object(Model_Donation), Null)
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:106 Controller_MVCGrid->setActualFields(Null)
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:582 AbstractView->setModel(Object(Model_Donation), Null)
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:253 View_CRUD->configureGrid(Null)
+/home/konstantin/www/cf/admin/page/donation.php:16 View_CRUD->setModel(Object(Model_Donation))
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donation->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donation", "donation", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * formater: datepicker
+
+
+============================================================
+dsql.php on line 1549, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib/DB
+
+Exception_DB: Database Query Failed
+
+------------------------------------------------------------
+Date: 24-Jul-2014 17:56:34
+Query String: page=donation
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/DB/dsql.php:1818 DB_dsql->fetch()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/SQL/Model.php:460 DB_dsql->next()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/SQL/Model.php:489 SQL_Model->next()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/CompleteLister.php:245 SQL_Model->valid()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Grid/Basic.php:336 CompleteLister->renderRows()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/CompleteLister.php:228 Grid_Basic->renderRows()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Grid/Advanced.php:323 CompleteLister->render()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:334 Grid_Advanced->render()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Page.php:168 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 Page->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:364 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:352 App_Web->execute()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * pdo_error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'donation.donor' in 'where clause'
+ * mode: select
+ * params:   * :a: Record #
+
+ * query: select  (select  concat(:a, `donor`.`id`) from `donor`  where `donation`.`donor` = `donor`.`id`    ) `donor_text`,`date`,`amount`,`id`,`donor` from `donation`      
+ * template: select [options] [field] [from] [table] [join] [where] [group] [having] [order] [limit]
+
+
+============================================================
+dsql.php on line 1549, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib/DB
+
+Exception_DB: Database Query Failed
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:05:45
+Query String: page=donor
+Referer: http://localhost/cf/admin/public/?page=donation
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/DB/dsql.php:1818 DB_dsql->fetch()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/SQL/Model.php:460 DB_dsql->next()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/SQL/Model.php:489 SQL_Model->next()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/CompleteLister.php:245 SQL_Model->valid()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Grid/Basic.php:336 CompleteLister->renderRows()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/CompleteLister.php:228 Grid_Basic->renderRows()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Grid/Advanced.php:323 CompleteLister->render()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:334 Grid_Advanced->render()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Page.php:168 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 Page->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:364 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:352 App_Web->execute()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * pdo_error: SQLSTATE[21000]: Cardinality violation: 1242 Subquery returns more than 1 row
+ * mode: select
+ * params: 
+ * query: select  `donor_type`,`donor`,`charity_no`,`town`,`postcode`,(select  `amount` from `donation`  where `donation`.`donor_id` = `donor`.`id`    ) `grants`,`id` from `donor`      
+ * template: select [options] [field] [from] [table] [join] [where] [group] [having] [order] [limit]
+
+
+============================================================
+dsql.php on line 1549, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib/DB
+
+Exception_DB: Database Query Failed
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:06:02
+Query String: page=donor
+Referer: http://localhost/cf/admin/public/?page=donation
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/DB/dsql.php:1818 DB_dsql->fetch()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/SQL/Model.php:460 DB_dsql->next()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/SQL/Model.php:489 SQL_Model->next()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/CompleteLister.php:245 SQL_Model->valid()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Grid/Basic.php:336 CompleteLister->renderRows()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/CompleteLister.php:228 Grid_Basic->renderRows()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Grid/Advanced.php:323 CompleteLister->render()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:334 Grid_Advanced->render()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Page.php:168 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 Page->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:364 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:352 App_Web->execute()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * pdo_error: SQLSTATE[21000]: Cardinality violation: 1242 Subquery returns more than 1 row
+ * mode: select
+ * params: 
+ * query: select  `donor_type`,`donor`,`charity_no`,`town`,`postcode`,(select  `amount` from `donation`  where `donation`.`donor_id` = `donor`.`id`    ) `grants`,`id` from `donor`      
+ * template: select [options] [field] [from] [table] [join] [where] [group] [having] [order] [limit]
+
+
+============================================================
+dsql.php on line 1549, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib/DB
+
+Exception_DB: Database Query Failed
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:06:03
+Query String: page=donor
+Referer: http://localhost/cf/admin/public/?page=donation
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/DB/dsql.php:1818 DB_dsql->fetch()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/SQL/Model.php:460 DB_dsql->next()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/SQL/Model.php:489 SQL_Model->next()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/CompleteLister.php:245 SQL_Model->valid()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Grid/Basic.php:336 CompleteLister->renderRows()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/CompleteLister.php:228 Grid_Basic->renderRows()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Grid/Advanced.php:323 CompleteLister->render()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:334 Grid_Advanced->render()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Page.php:168 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 Page->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractView.php:325 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:364 AbstractView->recursiveRender()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:352 App_Web->execute()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * pdo_error: SQLSTATE[21000]: Cardinality violation: 1242 Subquery returns more than 1 row
+ * mode: select
+ * params: 
+ * query: select  `donor_type`,`donor`,`charity_no`,`town`,`postcode`,(select  `amount` from `donation`  where `donation`.`donor_id` = `donor`.`id`    ) `grants`,`id` from `donor`      
+ * template: select [options] [field] [from] [table] [join] [where] [group] [having] [order] [limit]
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:18:55
+Query String: 
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:450 App_CLI->locatePath("addons", "auth/lib/Controller/Cookie.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("auth\Controller_Cookie")
+: PathFinder->{closure}("auth\Controller_Cookie")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("auth\Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:24 AbstractObject->add("auth/Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:9 Admin->addAuth()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/CLI.php:212 Admin->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:44 App_CLI->__construct("admin")
+/home/konstantin/www/cf/admin/public/index.php:13 App_Web->__construct("admin")
+
+Additional information:
+ * file: auth/lib/Controller/Cookie.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/auth/lib/Controller/Cookie.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/auth/lib/Controller/Cookie.php
+
+ * class: Controller_Cookie
+ * namespace: auth
+ * orig_class: auth\Controller_Cookie
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:20:12
+Query String: 
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:450 App_CLI->locatePath("addons", "auth/lib/Controller/Cookie.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("auth\Controller_Cookie")
+: PathFinder->{closure}("auth\Controller_Cookie")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("auth\Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:24 AbstractObject->add("auth/Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:9 Admin->addAuth()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/CLI.php:212 Admin->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:44 App_CLI->__construct("admin")
+/home/konstantin/www/cf/admin/public/index.php:13 App_Web->__construct("admin")
+
+Additional information:
+ * file: auth/lib/Controller/Cookie.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/auth/lib/Controller/Cookie.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/auth/lib/Controller/Cookie.php
+
+ * class: Controller_Cookie
+ * namespace: auth
+ * orig_class: auth\Controller_Cookie
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:20:57
+Query String: 
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:450 App_CLI->locatePath("addons", "auth/lib/Controller/Cookie.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("auth\Controller_Cookie")
+: PathFinder->{closure}("auth\Controller_Cookie")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("auth\Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:24 AbstractObject->add("auth/Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:9 Admin->addAuth()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/CLI.php:212 Admin->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:44 App_CLI->__construct("admin")
+/home/konstantin/www/cf/admin/public/index.php:13 App_Web->__construct("admin")
+
+Additional information:
+ * file: auth/lib/Controller/Cookie.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/auth/lib/Controller/Cookie.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/auth/lib/Controller/Cookie.php
+
+ * class: Controller_Cookie
+ * namespace: auth
+ * orig_class: auth\Controller_Cookie
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:21:14
+Query String: 
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:450 App_CLI->locatePath("addons", "auth/lib/Controller/Cookie.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("auth\Controller_Cookie")
+: PathFinder->{closure}("auth\Controller_Cookie")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("auth\Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:24 AbstractObject->add("auth/Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:9 Admin->addAuth()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/CLI.php:212 Admin->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:44 App_CLI->__construct("admin")
+/home/konstantin/www/cf/admin/public/index.php:13 App_Web->__construct("admin")
+
+Additional information:
+ * file: auth/lib/Controller/Cookie.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/auth/lib/Controller/Cookie.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/auth/lib/Controller/Cookie.php
+
+ * class: Controller_Cookie
+ * namespace: auth
+ * orig_class: auth\Controller_Cookie
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:23:20
+Query String: 
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:450 App_CLI->locatePath("addons", "auth/lib/Controller/Cookie.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("auth\Controller_Cookie")
+: PathFinder->{closure}("auth\Controller_Cookie")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("auth\Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:29 AbstractObject->add("auth/Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:9 Admin->addAuth()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/CLI.php:212 Admin->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:44 App_CLI->__construct("admin")
+/home/konstantin/www/cf/admin/public/index.php:13 App_Web->__construct("admin")
+
+Additional information:
+ * file: auth/lib/Controller/Cookie.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/auth/lib/Controller/Cookie.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/auth/lib/Controller/Cookie.php
+
+ * class: Controller_Cookie
+ * namespace: auth
+ * orig_class: auth\Controller_Cookie
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:23:33
+Query String: 
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:450 App_CLI->locatePath("addons", "auth/lib/Controller/Cookie.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("auth\Controller_Cookie")
+: PathFinder->{closure}("auth\Controller_Cookie")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("auth\Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:29 AbstractObject->add("auth/Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:9 Admin->addAuth()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/CLI.php:212 Admin->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:44 App_CLI->__construct("admin")
+/home/konstantin/www/cf/admin/public/index.php:13 App_Web->__construct("admin")
+
+Additional information:
+ * file: auth/lib/Controller/Cookie.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/auth/lib/Controller/Cookie.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/auth/lib/Controller/Cookie.php
+
+ * class: Controller_Cookie
+ * namespace: auth
+ * orig_class: auth\Controller_Cookie
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:23:45
+Query String: 
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:450 App_CLI->locatePath("addons", "auth/lib/Controller/Cookie.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("auth\Controller_Cookie")
+: PathFinder->{closure}("auth\Controller_Cookie")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("auth\Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:29 AbstractObject->add("auth/Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:9 Admin->addAuth()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/CLI.php:212 Admin->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:44 App_CLI->__construct("admin")
+/home/konstantin/www/cf/admin/public/index.php:13 App_Web->__construct("admin")
+
+Additional information:
+ * file: auth/lib/Controller/Cookie.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/auth/lib/Controller/Cookie.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/auth/lib/Controller/Cookie.php
+
+ * class: Controller_Cookie
+ * namespace: auth
+ * orig_class: auth\Controller_Cookie
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:26:33
+Query String: 
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:450 App_CLI->locatePath("addons", "auth/lib/Controller/Cookie.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("auth\Controller_Cookie")
+: PathFinder->{closure}("auth\Controller_Cookie")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("auth\Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:24 AbstractObject->add("auth/Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:9 Admin->addAuth()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/CLI.php:212 Admin->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:44 App_CLI->__construct("admin")
+/home/konstantin/www/cf/admin/public/index.php:13 App_Web->__construct("admin")
+
+Additional information:
+ * file: auth/lib/Controller/Cookie.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/auth/lib/Controller/Cookie.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/auth/lib/Controller/Cookie.php
+
+ * class: Controller_Cookie
+ * namespace: auth
+ * orig_class: auth\Controller_Cookie
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:27:13
+Query String: 
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:450 App_CLI->locatePath("addons", "auth/lib/Controller/Cookie.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("auth\Controller_Cookie")
+: PathFinder->{closure}("auth\Controller_Cookie")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("auth\Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:24 AbstractObject->add("auth/Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:9 Admin->addAuth()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/CLI.php:212 Admin->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:44 App_CLI->__construct("admin")
+/home/konstantin/www/cf/admin/public/index.php:13 App_Web->__construct("admin")
+
+Additional information:
+ * file: auth/lib/Controller/Cookie.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/auth/lib/Controller/Cookie.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/auth/lib/Controller/Cookie.php
+
+ * class: Controller_Cookie
+ * namespace: auth
+ * orig_class: auth\Controller_Cookie
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:27:18
+Query String: 
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:450 App_CLI->locatePath("addons", "auth/lib/Controller/Cookie.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("auth\Controller_Cookie")
+: PathFinder->{closure}("auth\Controller_Cookie")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("auth\Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:24 AbstractObject->add("auth/Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:9 Admin->addAuth()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/CLI.php:212 Admin->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:44 App_CLI->__construct("admin")
+/home/konstantin/www/cf/admin/public/index.php:13 App_Web->__construct("admin")
+
+Additional information:
+ * file: auth/lib/Controller/Cookie.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/auth/lib/Controller/Cookie.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/auth/lib/Controller/Cookie.php
+
+ * class: Controller_Cookie
+ * namespace: auth
+ * orig_class: auth\Controller_Cookie
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:30:29
+Query String: 
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:450 App_CLI->locatePath("addons", "auth/lib/Controller/Cookie.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("auth\Controller_Cookie")
+: PathFinder->{closure}("auth\Controller_Cookie")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("auth\Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:24 AbstractObject->add("auth/Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:9 Admin->addAuth()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/CLI.php:212 Admin->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:44 App_CLI->__construct("admin")
+/home/konstantin/www/cf/admin/public/index.php:13 App_Web->__construct("admin")
+
+Additional information:
+ * file: auth/lib/Controller/Cookie.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/auth/lib/Controller/Cookie.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/auth/lib/Controller/Cookie.php
+
+ * class: Controller_Cookie
+ * namespace: auth
+ * orig_class: auth\Controller_Cookie
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 24-Jul-2014 18:30:39
+Query String: 
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:450 App_CLI->locatePath("addons", "auth/lib/Controller/Cookie.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("auth\Controller_Cookie")
+: PathFinder->{closure}("auth\Controller_Cookie")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("auth\Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:24 AbstractObject->add("auth/Controller_Cookie")
+/home/konstantin/www/cf/admin/lib/Admin.php:9 Admin->addAuth()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/CLI.php:212 Admin->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:44 App_CLI->__construct("admin")
+/home/konstantin/www/cf/admin/public/index.php:13 App_Web->__construct("admin")
+
+Additional information:
+ * file: auth/lib/Controller/Cookie.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/auth/lib/Controller/Cookie.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/auth/lib/Controller/Cookie.php
+
+ * class: Controller_Cookie
+ * namespace: auth
+ * orig_class: auth\Controller_Cookie
