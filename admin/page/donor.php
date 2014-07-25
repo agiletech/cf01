@@ -15,8 +15,6 @@ class page_donor extends Page {
         $cr = $this->add('CRUD');
         $cr->setModel($m);
 
-        $cr->addAction('exportReport','column');
-
+        $cr->addAction('exportReport','toolbar');
     }
-
 }

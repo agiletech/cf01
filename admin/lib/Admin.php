@@ -10,8 +10,9 @@ class Admin extends App_Admin {
         $this->pathfinder
             ->addLocation(array(
                 'addons' => array('addons', 'atk4-addons', 'vendor'),
+                'php' => array('addons','lib')
             ))
-            ->setBasePath($this->pathfinder->base_location->getPath() . '../../')
+            ->setBasePath($this->pathfinder->base_location->getPath() . '/..')
         ;
         $this->addMenu();
     }

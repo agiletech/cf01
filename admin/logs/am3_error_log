@@ -747,3 +747,668 @@ Additional information:
  * class: Controller_Cookie
  * namespace: auth
  * orig_class: auth\Controller_Cookie
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 25-Jul-2014 07:30:24
+Query String: page=donor
+Referer: http://localhost/cf/admin/public/
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:462 App_CLI->locatePath("php", "exportt.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("exportt")
+: PathFinder->{closure}("exportt")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:306 spl_autoload_call("exportt")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/Grid/Advanced.php:116 AbstractObject->add("exportt", "gbtn14")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:513 Grid_Advanced->addButton("export", "exportt")
+/home/konstantin/www/cf/admin/page/donor.php:20 View_CRUD->addButton("export", "exportt")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * file: exportt.php
+ * type: php
+ * attempted_locations:   * 0: /home/konstantin/www/cf/admin/lib/exportt.php
+  * 1: /home/konstantin/www/cf/shared/lib/exportt.php
+  * 2: /home/konstantin/www/cf/vendor/atk4/atk4/lib/exportt.php
+  * 3: phar://../agiletoolkit-sandbox.phar/lib/exportt.php
+
+ * class: exportt
+ * namespace: 
+ * orig_class: exportt
+[25-Jul-2014 08:12:09 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Warning: [/home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:10]require_once(../../../addons/php-excel-reader/excel_reader.php): failed to open stream: No such file or directory' in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:10
+Stack trace:
+#0 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(10): error_handler(2, 'require_once(.....', '/home/konstanti...', 10, Array)
+#1 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(10): Controller_ExcelReader->init()
+#2 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php(343): Controller_ExcelReader->init()
+#3 /home/konstantin/www/cf/shared/lib/Model/Donor.php(27): AbstractObject->add('Controller_Exce...')
+#4 /home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php(460): Model_Donor->exportReport()
+#5 /home/konstantin/www/cf/admin/page/donor.php(18): View_CRUD->addAction('exportReport', 'toolbar')
+#6 /home/konstantin/www/cf/vendor/atk4/atk4/lib/ in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b> on line 10
+[25-Jul-2014 08:12:09 UTC] PHP Fatal error:  Controller_ExcelReader::init(): Failed opening required '../../../addons/php-excel-reader/excel_reader.php' (include_path='phar:///home/konstantin/www/cf/agiletoolkit-sandbox.phar:.:/usr/share/php:/usr/share/pear') in /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php on line 10
+
+
+============================================================
+unknown on line unknown, path: .
+
+ErrorException: Notice: [/home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:10]Undefined property: Admin::$base_path
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:15:14
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+[25-Jul-2014 08:16:12 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Warning: [/home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:10]require_once(/home/konstantin/www/cf/adminaddons/php-excel-reader/excel_reader.php): failed to open stream: No such file or directory' in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:10
+Stack trace:
+#0 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(10): error_handler(2, 'require_once(/h...', '/home/konstanti...', 10, Array)
+#1 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(10): Controller_ExcelReader->init()
+#2 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php(343): Controller_ExcelReader->init()
+#3 /home/konstantin/www/cf/shared/lib/Model/Donor.php(27): AbstractObject->add('Controller_Exce...')
+#4 /home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php(460): Model_Donor->exportReport()
+#5 /home/konstantin/www/cf/admin/page/donor.php(18): View_CRUD->addAction('exportReport', 'toolbar')
+#6 /home/konstantin/www/cf/v in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b> on line 10
+[25-Jul-2014 08:16:12 UTC] PHP Fatal error:  Controller_ExcelReader::init(): Failed opening required '/home/konstantin/www/cf/adminaddons/php-excel-reader/excel_reader.php' (include_path='phar:///home/konstantin/www/cf/agiletoolkit-sandbox.phar:.:/usr/share/php:/usr/share/pear') in /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php on line 10
+[25-Jul-2014 08:16:54 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Warning: [/home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:10]require_once(/home/konstantin/www/cf/admin../addons/php-excel-reader/excel_reader.php): failed to open stream: No such file or directory' in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:10
+Stack trace:
+#0 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(10): error_handler(2, 'require_once(/h...', '/home/konstanti...', 10, Array)
+#1 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(10): Controller_ExcelReader->init()
+#2 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php(343): Controller_ExcelReader->init()
+#3 /home/konstantin/www/cf/shared/lib/Model/Donor.php(27): AbstractObject->add('Controller_Exce...')
+#4 /home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php(460): Model_Donor->exportReport()
+#5 /home/konstantin/www/cf/admin/page/donor.php(18): View_CRUD->addAction('exportReport', 'toolbar')
+#6 /home/konstantin/www/c in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b> on line 10
+[25-Jul-2014 08:16:54 UTC] PHP Fatal error:  Controller_ExcelReader::init(): Failed opening required '/home/konstantin/www/cf/admin../addons/php-excel-reader/excel_reader.php' (include_path='phar:///home/konstantin/www/cf/agiletoolkit-sandbox.phar:.:/usr/share/php:/usr/share/pear') in /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php on line 10
+
+
+============================================================
+unknown on line unknown, path: .
+
+ErrorException: Notice: [/home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:10]Undefined property: PathFinder::$base_path
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:18:06
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+[25-Jul-2014 08:20:12 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Warning: [/home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:10]require_once(Object PathFinder_Location(admin_pathfinder_pathfinder_location)/addons/php-excel-reader/excel_reader.php): failed to open stream: No such file or directory' in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:10
+Stack trace:
+#0 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(10): error_handler(2, 'require_once(Ob...', '/home/konstanti...', 10, Array)
+#1 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(10): Controller_ExcelReader->init()
+#2 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php(343): Controller_ExcelReader->init()
+#3 /home/konstantin/www/cf/shared/lib/Model/Donor.php(27): AbstractObject->add('Controller_Exce...')
+#4 /home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php(460): Model_Donor->exportReport()
+#5 /home/konstantin/www/cf/admin/page/donor.php(18): View_CRUD->addAction('exportReport', 'to in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b> on line 10
+[25-Jul-2014 08:20:12 UTC] PHP Fatal error:  Controller_ExcelReader::init(): Failed opening required 'Object PathFinder_Location(admin_pathfinder_pathfinder_location)/addons/php-excel-reader/excel_reader.php' (include_path='phar:///home/konstantin/www/cf/agiletoolkit-sandbox.phar:.:/usr/share/php:/usr/share/pear') in /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php on line 10
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:24:14
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php:10 App_CLI->locate("addon", "excel_reader.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Controller_ExcelReader->init()
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * file: excel_reader.php
+ * type: addon
+ * attempted_locations: 
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:24:41
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php:10 App_CLI->locate("addons", "excel_reader.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Controller_ExcelReader->init()
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * file: excel_reader.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/excel_reader.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/excel_reader.php
+  * 2: /home/konstantin/www/cf/admin../..//addons/excel_reader.php
+  * 3: /home/konstantin/www/cf/admin../..//atk4-addons/excel_reader.php
+  * 4: /home/konstantin/www/cf/admin../..//vendor/excel_reader.php
+
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:25:31
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php:10 App_CLI->locate("addons", "php-excel-reader/excel_reader.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Controller_ExcelReader->init()
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * file: php-excel-reader/excel_reader.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/php-excel-reader/excel_reader.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/php-excel-reader/excel_reader.php
+  * 2: /home/konstantin/www/cf/admin../..//addons/php-excel-reader/excel_reader.php
+  * 3: /home/konstantin/www/cf/admin../..//atk4-addons/php-excel-reader/excel_reader.php
+  * 4: /home/konstantin/www/cf/admin../..//vendor/php-excel-reader/excel_reader.php
+
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:30:02
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php:10 App_CLI->locate("addons", "php-excel-reader/excel_reader.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Controller_ExcelReader->init()
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * file: php-excel-reader/excel_reader.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/php-excel-reader/excel_reader.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/php-excel-reader/excel_reader.php
+  * 2: /home/konstantin/www/cf/admin..//addons/php-excel-reader/excel_reader.php
+  * 3: /home/konstantin/www/cf/admin..//atk4-addons/php-excel-reader/excel_reader.php
+  * 4: /home/konstantin/www/cf/admin..//vendor/php-excel-reader/excel_reader.php
+
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:31:02
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php:10 App_CLI->locate("addons", "php-excel-reader/excel_reader.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Controller_ExcelReader->init()
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * file: php-excel-reader/excel_reader.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons/php-excel-reader/excel_reader.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons/php-excel-reader/excel_reader.php
+  * 2: /home/konstantin/www/cf/admin..//addons/php-excel-reader/excel_reader.php
+  * 3: /home/konstantin/www/cf/admin..//atk4-addons/php-excel-reader/excel_reader.php
+  * 4: /home/konstantin/www/cf/admin..//vendor/php-excel-reader/excel_reader.php
+
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:33:05
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php:10 App_CLI->locate("addons", "/php-excel-reader/excel_reader.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Controller_ExcelReader->init()
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * file: /php-excel-reader/excel_reader.php
+ * type: addons
+ * attempted_locations:   * 0: /home/konstantin/www/cf/shared/addons//php-excel-reader/excel_reader.php
+  * 1: phar://../agiletoolkit-sandbox.phar/addons//php-excel-reader/excel_reader.php
+  * 2: /home/konstantin/www/cf/admin..//addons//php-excel-reader/excel_reader.php
+  * 3: /home/konstantin/www/cf/admin..//atk4-addons//php-excel-reader/excel_reader.php
+  * 4: /home/konstantin/www/cf/admin..//vendor//php-excel-reader/excel_reader.php
+
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:33:36
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:462 App_CLI->locatePath("php", "Spreadsheet/Excel/Reader.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("Spreadsheet_Excel_Reader")
+: PathFinder->{closure}("Spreadsheet_Excel_Reader")
+/home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php:12 spl_autoload_call("Spreadsheet_Excel_Reader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Controller_ExcelReader->init()
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * file: Spreadsheet/Excel/Reader.php
+ * type: php
+ * attempted_locations:   * 0: /home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/Reader.php
+  * 1: /home/konstantin/www/cf/shared/lib/Spreadsheet/Excel/Reader.php
+  * 2: /home/konstantin/www/cf/vendor/atk4/atk4/lib/Spreadsheet/Excel/Reader.php
+  * 3: phar://../agiletoolkit-sandbox.phar/lib/Spreadsheet/Excel/Reader.php
+
+ * class: Spreadsheet_Excel_Reader
+ * namespace: 
+ * orig_class: Spreadsheet_Excel_Reader
+[25-Jul-2014 08:34:57 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Warning: [/home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:11]require_once(excel_reader.php): failed to open stream: No such file or directory' in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:11
+Stack trace:
+#0 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(11): error_handler(2, 'require_once(ex...', '/home/konstanti...', 11, Array)
+#1 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(11): Controller_ExcelReader->init()
+#2 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php(343): Controller_ExcelReader->init()
+#3 /home/konstantin/www/cf/shared/lib/Model/Donor.php(27): AbstractObject->add('Controller_Exce...')
+#4 /home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php(460): Model_Donor->exportReport()
+#5 /home/konstantin/www/cf/admin/page/donor.php(18): View_CRUD->addAction('exportReport', 'toolbar')
+#6 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php(343): page_don in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b> on line 11
+[25-Jul-2014 08:34:57 UTC] PHP Fatal error:  Controller_ExcelReader::init(): Failed opening required 'excel_reader.php' (include_path='phar:///home/konstantin/www/cf/agiletoolkit-sandbox.phar:.:/usr/share/php:/usr/share/pear') in /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php on line 11
+[25-Jul-2014 08:36:31 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Warning: [/home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:12]require_once(addons/php-excel-reader/excel_reader.php): failed to open stream: No such file or directory' in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:12
+Stack trace:
+#0 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(12): error_handler(2, 'require_once(ad...', '/home/konstanti...', 12, Array)
+#1 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(12): Controller_ExcelReader->init()
+#2 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php(343): Controller_ExcelReader->init()
+#3 /home/konstantin/www/cf/shared/lib/Model/Donor.php(27): AbstractObject->add('Controller_Exce...')
+#4 /home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php(460): Model_Donor->exportReport()
+#5 /home/konstantin/www/cf/admin/page/donor.php(18): View_CRUD->addAction('exportReport', 'toolbar')
+#6 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractO in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b> on line 12
+[25-Jul-2014 08:36:31 UTC] PHP Fatal error:  Controller_ExcelReader::init(): Failed opening required 'addons/php-excel-reader/excel_reader.php' (include_path='phar:///home/konstantin/www/cf/agiletoolkit-sandbox.phar:.:/usr/share/php:/usr/share/pear') in /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php on line 12
+[25-Jul-2014 08:36:34 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Warning: [/home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:12]require_once(addons/php-excel-reader/excel_reader.php): failed to open stream: No such file or directory' in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:12
+Stack trace:
+#0 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(12): error_handler(2, 'require_once(ad...', '/home/konstanti...', 12, Array)
+#1 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(12): Controller_ExcelReader->init()
+#2 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php(343): Controller_ExcelReader->init()
+#3 /home/konstantin/www/cf/shared/lib/Model/Donor.php(27): AbstractObject->add('Controller_Exce...')
+#4 /home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php(460): Model_Donor->exportReport()
+#5 /home/konstantin/www/cf/admin/page/donor.php(18): View_CRUD->addAction('exportReport', 'toolbar')
+#6 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractO in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b> on line 12
+[25-Jul-2014 08:36:34 UTC] PHP Fatal error:  Controller_ExcelReader::init(): Failed opening required 'addons/php-excel-reader/excel_reader.php' (include_path='phar:///home/konstantin/www/cf/agiletoolkit-sandbox.phar:.:/usr/share/php:/usr/share/pear') in /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php on line 12
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:38:03
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:462 App_CLI->locatePath("php", "Spreadsheet/Excel/Reader.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("Spreadsheet_Excel_Reader")
+: PathFinder->{closure}("Spreadsheet_Excel_Reader")
+/home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php:13 spl_autoload_call("Spreadsheet_Excel_Reader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Controller_ExcelReader->init()
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * file: Spreadsheet/Excel/Reader.php
+ * type: php
+ * attempted_locations:   * 0: /home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/Reader.php
+  * 1: /home/konstantin/www/cf/shared/lib/Spreadsheet/Excel/Reader.php
+  * 2: /home/konstantin/www/cf/vendor/atk4/atk4/lib/Spreadsheet/Excel/Reader.php
+  * 3: phar://../agiletoolkit-sandbox.phar/lib/Spreadsheet/Excel/Reader.php
+
+ * class: Spreadsheet_Excel_Reader
+ * namespace: 
+ * orig_class: Spreadsheet_Excel_Reader
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:39:15
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:462 App_CLI->locatePath("php", "Spreadsheet/Excel/Reader.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("Spreadsheet_Excel_Reader")
+: PathFinder->{closure}("Spreadsheet_Excel_Reader")
+/home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php:13 spl_autoload_call("Spreadsheet_Excel_Reader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Controller_ExcelReader->init()
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * file: Spreadsheet/Excel/Reader.php
+ * type: php
+ * attempted_locations:   * 0: /home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/Reader.php
+  * 1: /home/konstantin/www/cf/shared/lib/Spreadsheet/Excel/Reader.php
+  * 2: /home/konstantin/www/cf/vendor/atk4/atk4/lib/Spreadsheet/Excel/Reader.php
+  * 3: phar://../agiletoolkit-sandbox.phar/lib/Spreadsheet/Excel/Reader.php
+  * 4: /home/konstantin/www/cf/admin/../addons/Spreadsheet/Excel/Reader.php
+
+ * class: Spreadsheet_Excel_Reader
+ * namespace: 
+ * orig_class: Spreadsheet_Excel_Reader
+
+
+============================================================
+PathFinder.php on line 357, path: /home/konstantin/www/cf/vendor/atk4/atk4/lib
+
+Exception_PathFinder: File not found
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:40:52
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:462 App_CLI->locatePath("php", "Spreadsheet/Excel/Reader.php")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/PathFinder.php:112 PathFinder->loadClass("Spreadsheet_Excel_Reader")
+: PathFinder->{closure}("Spreadsheet_Excel_Reader")
+/home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php:13 spl_autoload_call("Spreadsheet_Excel_Reader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Controller_ExcelReader->init()
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * file: Spreadsheet/Excel/Reader.php
+ * type: php
+ * attempted_locations:   * 0: /home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/Reader.php
+  * 1: /home/konstantin/www/cf/shared/lib/Spreadsheet/Excel/Reader.php
+  * 2: /home/konstantin/www/cf/vendor/atk4/atk4/lib/Spreadsheet/Excel/Reader.php
+  * 3: phar://../agiletoolkit-sandbox.phar/lib/Spreadsheet/Excel/Reader.php
+  * 4: /home/konstantin/www/cf/admin/../addons/Spreadsheet/Excel/Reader.php
+  * 5: /home/konstantin/www/cf/admin/../lib/Spreadsheet/Excel/Reader.php
+
+ * class: Spreadsheet_Excel_Reader
+ * namespace: 
+ * orig_class: Spreadsheet_Excel_Reader
+
+
+============================================================
+ on line , path: 
+
+BaseException: You can add only classes based on AbstractObject
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:43:12
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:311 SQL_Model->exception("You can add only classes based on AbstractObject")
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:28 AbstractObject->add("Spreadsheet_Excel_Reader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+Additional information:
+ * Raised by object: Object Model_Donor(admin_layout_fluid_donor_crud_model_donor)
+
+
+============================================================
+unknown on line unknown, path: .
+
+ErrorException: Notice: [/home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/<b>Reader.php</b>:1718]iconv(): Detected an incomplete multibyte character in input string
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:46:37
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/Reader.php:1555 Spreadsheet_Excel_Reader->_encodeUTF16("h t t p : / / w w w . c n n . c o m /")
+/home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/Reader.php:1315 Spreadsheet_Excel_Reader->_parsesheet(22707)
+/home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/Reader.php:988 Spreadsheet_Excel_Reader->_parse()
+/home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/Reader.php:928 Spreadsheet_Excel_Reader->read("/home/konstantin/www/cf/admin/public/xls/example.xls")
+/home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php:13 Spreadsheet_Excel_Reader->Spreadsheet_Excel_Reader("/home/konstantin/www/cf/admin/public/xls/example.xls")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Controller_ExcelReader->init()
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+
+
+============================================================
+unknown on line unknown, path: .
+
+ErrorException: Notice: [/home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/<b>Reader.php</b>:1718]iconv(): Detected an incomplete multibyte character in input string
+
+------------------------------------------------------------
+Date: 25-Jul-2014 08:48:13
+Query String: page=donor&admin_layout_fluid_donor_crud_virtualpage=exportReport&cut_page=1
+Referer: http://localhost/cf/admin/public/?page=donor
+Version: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+Port: 80
+------------------------------------------------------------
+ Stack trace
+/home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/Reader.php:1555 Spreadsheet_Excel_Reader->_encodeUTF16("h t t p : / / w w w . g o o g l e . c o m /")
+/home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/Reader.php:1315 Spreadsheet_Excel_Reader->_parsesheet(6351)
+/home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/Reader.php:988 Spreadsheet_Excel_Reader->_parse()
+/home/konstantin/www/cf/admin/lib/Spreadsheet/Excel/Reader.php:928 Spreadsheet_Excel_Reader->read("/home/konstantin/www/cf/admin/public/xls/example.xls")
+/home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php:11 Spreadsheet_Excel_Reader->Spreadsheet_Excel_Reader("/home/konstantin/www/cf/admin/public/xls/example.xls")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 Controller_ExcelReader->init()
+/home/konstantin/www/cf/shared/lib/Model/Donor.php:27 AbstractObject->add("Controller_ExcelReader")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php:460 Model_Donor->exportReport()
+/home/konstantin/www/cf/admin/page/donor.php:18 View_CRUD->addAction("exportReport", "toolbar")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php:343 page_donor->init()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:135 AbstractObject->add("page_donor", "donor", "Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:502 App_Frontend->layout_Content()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php:38 App_Web->addLayout("Content")
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Admin.php:60 App_Frontend->initLayout()
+/home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Web.php:331 App_Admin->initLayout()
+/home/konstantin/www/cf/admin/public/index.php:14 App_Web->main()
+
+[25-Jul-2014 08:53:27 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Notice: [/home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:13]Undefined variable: data' in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:13
+Stack trace:
+#0 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(13): error_handler(8, 'Undefined varia...', '/home/konstanti...', 13, Array)
+#1 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php(343): Controller_ExcelReader->init()
+#2 /home/konstantin/www/cf/shared/lib/Model/Donor.php(27): AbstractObject->add('Controller_Exce...')
+#3 /home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php(460): Model_Donor->exportReport()
+#4 /home/konstantin/www/cf/admin/page/donor.php(18): View_CRUD->addAction('exportReport', 'toolbar')
+#5 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php(343): page_donor->init()
+#6 /home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php(135): AbstractObject->add('page_donor', 'donor', 'Content')
+#7 /home/konstantin/w in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b> on line 13
+[25-Jul-2014 08:53:27 UTC] PHP Fatal error:  Cannot access empty property in /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php on line 10
+[25-Jul-2014 08:54:18 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Notice: [/home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:13]Undefined variable: data' in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b>:13
+Stack trace:
+#0 /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php(13): error_handler(8, 'Undefined varia...', '/home/konstanti...', 13, Array)
+#1 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php(343): Controller_ExcelReader->init()
+#2 /home/konstantin/www/cf/shared/lib/Model/Donor.php(27): AbstractObject->add('Controller_Exce...')
+#3 /home/konstantin/www/cf/vendor/atk4/atk4/lib/View/CRUD.php(460): Model_Donor->exportReport()
+#4 /home/konstantin/www/cf/admin/page/donor.php(18): View_CRUD->addAction('exportReport', 'toolbar')
+#5 /home/konstantin/www/cf/vendor/atk4/atk4/lib/AbstractObject.php(343): page_donor->init()
+#6 /home/konstantin/www/cf/vendor/atk4/atk4/lib/App/Frontend.php(135): AbstractObject->add('page_donor', 'donor', 'Content')
+#7 /home/konstantin/w in /home/konstantin/www/cf/admin/lib/Controller/<b>ExcelReader.php</b> on line 13
+[25-Jul-2014 08:54:18 UTC] PHP Fatal error:  Cannot access empty property in /home/konstantin/www/cf/admin/lib/Controller/ExcelReader.php on line 13

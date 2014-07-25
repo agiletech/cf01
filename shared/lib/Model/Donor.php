@@ -24,6 +24,9 @@ class Model_Donor extends SQL_Model{
         });
     }
     function exportReport(){
-        return 'This function is not read yet';
+        $reader = $this->add('Controller_ExcelReader');
+//        $reader = $this->add('Spreadsheet_Excel_Reader');
+        return $reader->getData();
+//        return 'This function is not read yet';
     }
 }
