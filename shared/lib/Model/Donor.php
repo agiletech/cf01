@@ -25,7 +25,7 @@ class Model_Donor extends SQL_Model{
     }
     function exportReport(){
         $reader = $this->add('Controller_ExcelReader');
-//        $reader = $this->add('Spreadsheet_Excel_Reader');
+//        $writer = $this->add('Controller_ExcelWriter');
         return $reader->getData();
 //        return 'This function is not read yet';
     }

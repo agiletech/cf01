@@ -5,5 +5,5 @@ agiletoolkit-sandbox.phar
 run.bat
 run.sh
 VERSION
-logs/*
+admin/logs/*
 addons/*
