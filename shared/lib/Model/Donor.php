@@ -9,12 +9,10 @@ class Model_Donor extends SQL_Model{
     function init(){
         parent::init();
 
-        $this->addField('donor_type')->setValueList(array('Trust','Individual','Business'));
         $this->addField('donor');
+        $this->addField('donor_type')->setValueList(array('Trust','Individual','Business'));
         $this->addField('charity_no');
         $this->addField('town');
-        $this->addField('postcode');
-
         $this->addExpression('grants')->set(function($m,$q){
             return $q->dsql()
                 ->table('donation')
@@ -22,11 +20,23 @@ class Model_Donor extends SQL_Model{
                 ->where('donation.donor_id',$q->getField('id'))
                 ;
         });
+        $this->addField('postcode');
     }
     function exportReport(){
-        $reader = $this->add('Controller_ExcelReader');
-//        $writer = $this->add('Controller_ExcelWriter');
-        return $reader->getData();
-//        return 'This function is not read yet';
+        $phpexcel = $this->add('Controller_PHPExcel');
+        $arr = $this->getRows();
+
+        $countRows = 2;
+        foreach($arr as $row){
+            $countCols = 0;
+            foreach($row as $key=>$val){
+                if($key == 'id') continue;
+                $phpexcel->setCellValue($countCols,$countRows,$val);
+                $countCols++;
+            }
+            $countRows++;
+        }
+        $phpexcel->saveSheet();
+        return 'ok';
     }
 }

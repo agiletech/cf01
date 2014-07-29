@@ -10,7 +10,7 @@ class Admin extends App_Admin {
         $this->pathfinder
             ->addLocation(array(
                 'addons' => array('addons', 'atk4-addons', 'vendor'),
-                'php' => array('addons','lib')
+                'php' => array('addons','lib','addons/PHPExcel/lib')
             ))
             ->setBasePath($this->pathfinder->base_location->getPath() . '/..')
         ;
