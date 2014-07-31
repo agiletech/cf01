@@ -9,8 +9,8 @@ class Model_Donation extends SQL_Model{
     function init(){
         parent::init();
 
+        $this->addField('amount')->type('money');
         $this->hasOne('Donor','donor_id','donor');
-        $this->addField('date')->type('datetime');
-        $this->addField('amount');
+        $this->addField('date')->type('date');
     }
 }

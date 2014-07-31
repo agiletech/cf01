@@ -26,10 +26,11 @@ class Admin extends App_Admin {
         $this->auth->check();
     }
     private function addMenu(){
-        $this->app->menu->addMenuItem('/', 'Home');
-        $this->app->menu->addMenuItem('donor', 'Donors');
-        $this->app->menu->addMenuItem('donation', 'Donations');
-        $this->app->menu->addMenuItem('user', 'Users');
-        $this->app->menu->addMenuItem('logout', 'Log Out');
+        $this->app->menu->addItem(['Dashboard', 'icon'=>'home'],'/');
+        $m_donors = $this->app->menu->addMenu(['Donations', 'icon'=>'box']);
+        $m_donors -> addItem(['Donors', 'icon'=>'users'],'donor');
+        $m_donors -> addItem(['Donations', 'icon'=>'chart-bar'],'donation');
+        $this->app->menu->addItem(['Users', 'icon'=>'users'],'user');
+        $this->app->menu->addItem(['Log Out', 'icon'=>'logout'],'logout');
     }
 }

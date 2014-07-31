@@ -6,3 +6,5 @@ $config['dsn'] = array(
     //'username',
     //'password'
 );
+
+include'../config.php';
