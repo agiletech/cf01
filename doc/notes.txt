@@ -1,0 +1,120 @@
+ - centres
+ - enquires
+ - courses
+    placement, cost
+    several courses in succession
+ - each center to have some dashboard
+ - donation database
+    relatively simple
+
+ - history trace
+
+
+ - companies (clients)
+   - Companies.xlsx
+
+
+=========================================
+courses are in straight line. Once a course is completed, they advance to next
+course. Must complete all of them to become qualified.
+
+ = Lead
+ = Application
+ = Taking part in course
+ = Certification
+   = Different diplomas
+
+==========================================
+Letters
+
+ = thank you for your application, please find enclosed - mail merge documents.
+  - paper letters.
+  - would need to look at some examples (will be available in dropbox)
+
+==========================================
+Students (25-60)
+ - would give a call, or go to website. There is a form on a website.
+   - later possibly integrate with the system.
+ - few hundred applicants per year.
+ - they should get email confirmatoin.
+ - they select one of 4 courses which then would have sessions.
+ - different payment course.
+ - one file per course, which they fill out and mail back.
+ - admin receives letter, look at the name.
+ - they need to enter all the information back into the system.
+   - workshop would be different to certificat-ones
+   - workshop is one-off.
+ - sending confirmation mail / letter again, may have a reading list.
+ - up to 60 people per session, happens in different centers
+ - session happens every week for about 30 weeks (academic year)
+   - see list
+ - usually when person selects a location, they stay there.
+ - they have preferences for the location / time, but would be offered somewhere else.
+ - groups have different capacities, if group is not full, try to move people someplace else.
+
+--------------------------------------------
+ - tutors (about 10) who would have access to the system.
+ - [need to confirm if needed] attendance
+ - early warning system, when tutor notices student is struggling.
+   - sets up meeting.
+ - possibly person is leaving.
+
+ ==============
+   - Diploma 1,
+   - Diploma 2
+
+---------------------------------------------
+course finished.
+  - superviser
+  - experiantial leader
+
+Students meet clients and track hours, would give the data to
+administrators. Administrators will verify that and will record
+ <student> <client> <date> <hours>  <amount paid>
+
+Student qualifies when they track X amount of hours.
+
+========================================================
+ - Company (advert or referred through GP), business program, stress at work,
+ - company register their interest, form is sent which needs to be sent back
+ - Assesment session (paid) to understand how big is the problem.
+ - adminsistrator calls them back, meeting scheduled.
+ - Assigns a Trainee. (might not be available yet).
+ - Schedule - weekly counceling session.
+ - could be short-term or long-term
+ - if repered by GP can receive 10 free sessions paid by NHS.
+ - can be long-term.
+ - short-term - you've got all your session letters, would you like to continue.
+ - notes field (client is disable, want to see male or female)
+ - locations - five main centers but also churches and gp surgeries.
+ - if it's through NHS or Company then it's called "contracted counceling"
+
+It's possible that individual can come and get some counceling. (biggest market)
+
+ - Client may be sponsored by Company or NHS, but no most cases they wouldn't be.
+
+
+===========================================================
+
+Councelors have level of qualification.
+
+
+Admin enters which therapist trainee is seing.
+
+a page listing all new cerificates to be sent out and a button to dismiss.
+
+
+People
+ - Leads
+ - Staff
+ - Trainee
+ - Councelor
+ - Tutor
+ - Admin
+ - Super Admin
+ - Supervisor
+ - Client (but noone should see them)
+
+
+
+waiting list - how long they have been waiting (2 weeks)
