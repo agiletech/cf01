@@ -13,7 +13,27 @@ class page_user extends Page {
         parent::init();
         $m = $this->add('Model_User');
         $cr = $this->add('CRUD');
-        $cr->setModel($m);
+        $cr->setModel($m,array(
+            'email',
+            'password',
+            'name',
+            'surname',
+            'phone',
+            'is_lead',
+            'is_staff',
+            'is_councelor',
+            'is_trainee',
+            'is_tutor',
+            'is_donor',
+            'is_admin',
+            'is_superadmin',
+            'is_client'
+        ),array(
+            'name',
+            'surname',
+            'email',
+            'phone'
+        ));
 
     }
 

@@ -21,6 +21,7 @@ class Model_Donor extends SQL_Model{
                 ;
         });
         $this->addField('postcode');
+        $this->hasOne('Person');
     }
     function exportReport(){
         $phpexcel = $this->add('Controller_PHPExcel');

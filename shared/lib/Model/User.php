@@ -13,6 +13,19 @@ class Model_User extends SQL_Model{
 
         $this->addField('email');
         $this->addField('password')->type('password');
-        $this->addField('name');
+
+        $person = $this->join('person.user_id','id');
+        $person->addField('name');
+        $person->addField('surname');
+        $person->addField('is_lead')->type('boolean');
+        $person->addField('is_staff')->type('boolean');
+        $person->addField('is_councelor')->type('boolean');
+        $person->addField('is_trainee')->type('boolean');
+        $person->addField('is_tutor')->type('boolean');
+        $person->addField('is_donor')->type('boolean');
+        $person->addField('is_admin')->type('boolean');
+        $person->addField('is_superadmin')->type('boolean');
+        $person->addField('is_client')->type('boolean');
+        $person->addField('phone');
     }
 }

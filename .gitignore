@@ -7,7 +7,7 @@ run.sh
 VERSION
 admin/logs/*
 addons/*
-
+*.ok
+*.fail
 config-auto.php
-
 *.bak
