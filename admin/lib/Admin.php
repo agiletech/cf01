@@ -19,7 +19,7 @@ class Admin extends App_Admin {
     private function addAuth(){
         $mu=$this->add('Model_User');
         $this->add('Auth')
-            ->usePasswordEncryption('md5')
+            ->usePasswordEncryption()
             ->setModel($mu, 'email', 'password')
         ;
 //        $this->auth->add('auth/Controller_Cookie');

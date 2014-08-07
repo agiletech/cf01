@@ -15,6 +15,8 @@ if (file_exists('./agiletoolkit-sandbox.phar')) {
     include_once'agiletoolkit-sandbox/lib/AgileToolkit/Installer.php';
 
 } else {
+  echo "<pre>";
+    readfile('/app/vendor/nginx/conf/nginx.conf');
     exit('Download atk4-ide.phar to use installer.');
 }
 
