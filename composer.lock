@@ -13,12 +13,6 @@
                 "url": "https://github.com/atk4/atk4.git",
                 "reference": "origin/4.3"
             },
-            "dist": {
-                "type": "zip",
-                "url": "http://agiletoolkit.org/distfiles/agiletoolkit-4.2.4.zip",
-                "reference": null,
-                "shasum": null
-            },
             "type": "library",
             "autoload": {
                 "psr-0": {
