@@ -28,13 +28,13 @@ class Admin extends App_Admin {
     private function addMenu(){
         $this->app->menu->addItem(['Dashboard', 'icon'=>'home'],'/');
 
-        $m_donors = $this->app->menu->addMenu(['Donations', 'icon'=>'box']);
-        $m_donors -> addItem(['Donors', 'icon'=>'users'],'donor');
-        $m_donors -> addItem(['Donations', 'icon'=>'chart-bar'],'donation');
-
         $m_notif = $this->app->menu->addMenu(['Notifications', 'icon'=>'info']);
         $m_notif -> addItem(['Notifications', 'icon'=>'info'],'notification');
         $m_notif -> addItem(['Notification Types', 'icon'=>'info'],'notificationTypes');
+
+        $m_donors = $this->app->menu->addMenu(['People', 'icon'=>'users']);
+        $m_donors -> addItem(['All People', 'icon'=>'users'],'person');
+
 
         $m_courses = $this->app->menu->addMenu(['Courses', 'icon'=>'doc']);
         $m_courses->addItem(['Centers', 'icon'=>'globe-1'],'center');
@@ -42,12 +42,19 @@ class Admin extends App_Admin {
         $m_courses->addItem(['Schedule', 'icon'=>'calendar'],'course_schedule');
         $m_courses->addItem(['Trainee', 'icon'=>'users-1'],'course_trainee');
         $m_courses->addItem(['Issued Certificate', 'icon'=>'book'],'course_issuedCertificate');
-        $m_courses->addItem(['Application', 'icon'=>'book'],'course_application');
+        //$m_courses->addItem(['Application', 'icon'=>'book'],'course_application');
 
         $m_users = $this->app->menu->addMenu(['Users', 'icon'=>'users']);
         $m_users->addItem(['Users', 'icon'=>'users'],'user');
         $m_users->addItem(['Clients', 'icon'=>'target'],'user_client');
         $m_users->addItem(['Company', 'icon'=>'vcard'],'user_company');
+
+        $m_donors = $this->app->menu->addMenu(['Donations', 'icon'=>'box']);
+        $m_donors -> addItem(['Donors', 'icon'=>'users'],'donor');
+        $m_donors -> addItem(['Donations', 'icon'=>'chart-bar'],'donation');
+
+
+
 
         $this->app->menu->addItem(['Log Out', 'icon'=>'logout'],'logout');
     }

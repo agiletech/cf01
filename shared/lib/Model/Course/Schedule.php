@@ -13,6 +13,7 @@ class Model_Course_Schedule extends SQL_Model{
         $this->hasOne('Center');
 //        $this->addField('course_id');
         $this->hasOne('Course');
+        $this->hasMany('Course_Application');
         $this->addField('start_date')->type('date');
         $this->addField('is_completed')->type('boolean');
     }

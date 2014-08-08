@@ -9,18 +9,20 @@ class Model_Course_Application extends SQL_Model{
     function init(){
         parent::init();
 
-        $this->addField('trainee_id');
+        $this->hasOne('Person');
+        //$this->addField('trainee_id');
 //        $trainee = $this->leftJoin('trainee','trainee_id');//TODO can't add new record
 //        $trainee->hasOne('Person','person_id')->caption('Trainee');
 
-        $this->addField('course_id');
+        $this->hasOne('Course_Schedule');
+        //$this->hasOne('Course_Schedule');
+
         $this->addField('applied_ts')->type('date');
         $this->addField('assigned_ts')->type('date');
-        $this->addField('is_waiting');
-        $this->addField('course_schedule_id');
-        $this->addField('price');
+        $this->addField('is_waiting')->type('boolean');
+        $this->addField('price')->hint('Actual offered cource price');
+        $this->addField('location_preference')->type('text');
         $this->addField('is_completed')->type('boolean');
         $this->addField('is_terminated')->type('boolean');
-        $this->addField('location_preference')->type('text');
     }
 }

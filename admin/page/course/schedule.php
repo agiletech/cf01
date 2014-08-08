@@ -14,5 +14,7 @@ class page_course_schedule extends Page {
         $m = $this->add('Model_Course_Schedule');
         $cr = $this->add('CRUD');
         $cr->setModel($m);
+
+        $cr->addRef('Course_Application');
     }
 }

@@ -12,6 +12,7 @@ class Model_Trainee extends SQL_Model{
 //        $this->addField('person_id');
         $this->hasOne('Person');
         $this->hasOne('Person','supervisor_id');
+
 //        $this->addField('supervisor_id');
     }
 }
