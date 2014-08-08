@@ -12,7 +12,7 @@ class Model_Person_Trainee extends Model_Person{
         $tr=$this->join('trainee.person_id');
 //        $this->addField('person_id');
         //$this->hasOne('Person');
-        $tr->hasOne('Person','supervisor_id');
+        $tr->hasOne('Person_Councelor','supervisor_id');
         $this->addCondition('is_trainee',true);
 
 //        $this->addField('supervisor_id');
