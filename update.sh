@@ -11,3 +11,5 @@ cat dependencies | while read dir path; do
     ( cd $dir; git clone $path . )
   fi
 done
+
+test -f config.php || cp config-dist.php config.php
