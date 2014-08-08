@@ -34,6 +34,8 @@ class Admin extends App_Admin {
 
         $m_donors = $this->app->menu->addMenu(['People', 'icon'=>'users']);
         $m_donors -> addItem(['All People', 'icon'=>'users'],'person');
+        $m_donors -> addItem(['Trainees Only', 'icon'=>'book'],'person/trainee');
+        $m_donors -> addItem(['Councelors Only', 'icon'=>'graduation-cap'],'person/councelor');
 
 
         $m_courses = $this->app->menu->addMenu(['Courses', 'icon'=>'doc']);

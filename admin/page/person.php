@@ -9,7 +9,7 @@ class page_person extends Page {
 
     public $title='Users';
 
-    function init() {
+    function page_index() {
         parent::init();
         $m = $this->add('Model_Person');
         $cr = $this->add('CRUD');
@@ -36,6 +36,37 @@ class page_person extends Page {
             'is_donor',
             'is_admin',
         ));
+
+    }
+
+    function page_trainee(){
+        $m = $this->add('Model_Person_Trainee');
+        $cr = $this->add('CRUD');
+        $cr->setModel($m,array(
+            'name',
+            'surname',
+            'phone',
+            'supervisor_id',
+        ),array(
+            'name',
+            'surname',
+            'supervisor',
+        ));
+
+
+    }
+    function page_councelor(){
+        $m = $this->add('Model_Person_Councelor');
+        $cr = $this->add('CRUD');
+        $cr->setModel($m,array(
+            'name',
+            'surname',
+            'phone',
+        ),array(
+            'name',
+            'surname',
+        ));
+
 
     }
 
