@@ -9,9 +9,9 @@ class Model_IssuedCertificate extends SQL_Model{
     function init(){
         parent::init();
 
-        $this->addField('trainee_id');
-        $trainee = $this->leftJoin('trainee','trainee_id');//TODO can't add new record
-        $trainee->hasOne('Person','person_id')->caption('Trainee');
+  //      $this->addField('trainee_id');
+//        $trainee = $this->leftJoin('trainee','trainee_id');//TODO can't add new record
+        $this->hasOne('Person_Trainee','trainee_id')->caption('Trainee');
         $this->hasOne('Course');
         $this->addField('ts_issued')->type('date');
         $this->addField('is_sent')->type('boolean');

@@ -9,7 +9,7 @@ class Model_Course_Application extends SQL_Model{
     function init(){
         parent::init();
 
-        $this->hasOne('Person');
+        $this->hasOne('Person','trainee_id');
         //$this->addField('trainee_id');
 //        $trainee = $this->leftJoin('trainee','trainee_id');//TODO can't add new record
 //        $trainee->hasOne('Person','person_id')->caption('Trainee');

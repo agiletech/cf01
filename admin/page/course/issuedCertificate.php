@@ -14,8 +14,8 @@ class page_course_issuedCertificate extends Page {
         $m = $this->add('Model_IssuedCertificate');
         $cr = $this->add('CRUD');
         $cr->setModel($m
-            ,array('person_id','course_id','ts_issued','is_sent')//TODO can't add new record
-            ,array('person','course','ts_issued','is_sent')
+            ,array('trainee_id','course_id','ts_issued','is_sent')//TODO can't add new record
+            ,array('trainee','course','ts_issued','is_sent')
         );
     }
 }
