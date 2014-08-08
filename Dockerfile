@@ -1,10 +1,11 @@
-FROM octohost/php5-apache
+FROM tutum/apache-php:latest
 
-ADD . /var/www
+RUN cd /app && ls -l
 
-RUN apt-get -y install git
-RUN /var/www/update.sh
+RUN apt-get install php5 git php5-curl
+RUN cd /app && curl -sS https://getcomposer.org/installer | php
+RUN cd /app && composer install
+RUN cd /app && ./update.sh
 
 EXPOSE 80
-
-CMD ["/bin/bash", "/start.sh"]
+CMD ["/run.sh"]
